@@ -3,6 +3,7 @@ package com.senac.senacjunit;
 public class calculadora {
 
     //teste
+    //teste 2
     public static int soma(int x, int y){
         return x+y;
     }
