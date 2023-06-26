@@ -1,6 +1,8 @@
 package com.senac.senacjunit;
 
 public class calculadora {
+
+    //teste
     public static int soma(int x, int y){
         return x+y;
     }
