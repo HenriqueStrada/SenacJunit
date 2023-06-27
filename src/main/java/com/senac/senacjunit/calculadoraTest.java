@@ -1,24 +1,31 @@
 package com.senac.senacjunit;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class calculadoraTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void soma() {
-        int resultado = calculadora.soma(2, 2);
+        int resultado = calculadora.soma(2,2);
         Assertions.assertEquals(4, resultado);
     }
-
-    @org.junit.jupiter.api.Test
+    @Test
     void subtracao() {
+        int resultado = calculadora.subtracao(5,3);;
+        Assertions.assertEquals(2, resultado);
     }
-
-    @org.junit.jupiter.api.Test
+    @Test
     void divisao() {
+        int resultado = calculadora.divisao(10, 2);
+        Assertions.assertEquals(5, resultado);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void multiplicacao() {
+        int resultado = calculadora.multiplicacao(5,2);
+        Assertions.assertEquals(10, resultado);
     }
 }
